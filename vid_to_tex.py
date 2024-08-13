@@ -1,4 +1,5 @@
-from langchain.document_loaders import YoutubeLoader
+# from langchain_community.document_loaders import YoutubeLoader
+from langchain_community.document_loaders import YoutubeLoader
 from langchain.llms import OpenAI
 from langchain.chains.summarize import load_summarize_chain
 from reportlab.lib.pagesizes import letter
@@ -8,7 +9,7 @@ import os
 OPENAI_API_KEY = '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'
 
 
-loader = YoutubeLoader.from_youtube_url("https://youtu.be/WQdqgrWvy6g?si=S_LGjgatxexcRgX9", add_video_info=True)
+loader = YoutubeLoader.from_youtube_url("https://www.youtube.com/watch?v=d9pXyF09SHg", add_video_info=True)
 result = loader.load()
 
 print (f"Found video from {result[0].metadata['author']} that is {result[0].metadata['length']} seconds long")
