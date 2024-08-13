@@ -1,0 +1,69 @@
+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
+
+Knowledge Transfer Process Implementation Details:
+
+Knowledge Transfer Plan
+
+Title/Name - user entered 
+Service area - select from list/user entered
+Program ID
+KT Status
+
+Knowledge Transfer Activity
+
+Title/Name - user entered
+Activities - user entered/selected from list
+Description - user entered
+
+API’s
+
+Knowledge Transfer API’s
+
+Get KT Plan by ID - GET /ktplans/{id}  
+Get all KT Plan - GET /ktplans
+Create KT Plan - POST /ktplans
+Update KT Plan - PUT /ktplans/{id}
+Delete KT Plan - DELETE /ktplans/{id}
+
+Knowledge Transfer Activity API’s
+
+Create KT Activity - POST /ktactivities
+Get all KT Activity by Plan ID - GET /ktactivities
+Get KT Activity by ID - GET /ktactivities/{id}
+Update KT Activity - PUT /ktactivities/{id} 
+Delete KT Activity - DELETE /ktactivities/{id}
+
+Additional API’s
+
+Send Email Notification - POST /notifications/email
+
+
+
+
+
+
+Knowledge Transfer Session
+
+Date - calendar selection
+Frequency - select from list
+Number of meetings - user entered/select from list
+Location - user entered
+Status - linked Knowledge transfer Status model
+
+
+Process
+
+Process Flow
+
+1. Create/Add KT Plan - Enter title and select service area from list (or) User can enter Manually
+    It has two option like Gap Remediation  and user selection.
+2. Add related KT Activities - Enter title and description
+3. Check/Validate title, Activity, & description. 
+4. Save activity/plan. Or User can click on complete to move to In process state.
+5. Create KT Session
+6. Set frequency, number of meetings, dates for KT 
+7. update status of KT, After each meeting. 
+
+
+
+
